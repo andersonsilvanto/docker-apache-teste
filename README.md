@@ -127,15 +127,53 @@ A instrução EXPOSE documenta e sinaliza qual porta de rede o container utiliza
 ---
 
 **Print 3 - Repositório GitHub:**
-![Repositório GitHub](images/nome-do-seu-print-3.png)
+## 3. EVIDÊNCIAS (PRINTS)
 
-*Tela do repositório público contendo o Dockerfile e o README.md publicados.*
+**Print 1 - Estrutura do Dockerfile (Visual Studio Code):**
+![Print 1](images/1.png)  
+*Configuração inicial e escrita das diretivas do Dockerfile para o servidor web Apache.*
 
-Print 1 - Terminal de Comando: Demonstração da execução dos comandos para construção da imagem e execução do container.
+---
 
-Print 2 - Navegador Web: Acesso ao endereço http://localhost:8080 exibindo a tela padrão de confirmação do Apache.
+**Print 2 - Página Inicial do Servidor (Navegador):**
+![Print 2](images/2.jpg)  
+*Visualização da página padrão de boas-vindas do Debian Apache ("It works!").*
 
-Print 3 - Repositório GitHub: Tela do repositório público contendo o Dockerfile e o README.md publicados (Disponível em: https://github.com/andersonsilvanto/docker-apache-teste
+---
+
+**Print 3 - Ambiente de Desenvolvimento e Terminal:**
+![Print 3](images/3.png)  
+*Execução integrada dos comandos de construção da imagem e gestão do ambiente.*
+
+---
+
+**Print 4 - Comandos e Validação no Terminal (PowerShell):**
+![Print 4](images/4.png)  
+*Verificação do estado dos containers ativos através do comando `docker ps`.*
+
+---
+
+**Print 5 - Documentação e Detalhes da Página Apache:**
+![Print 5](images/5.png)  
+*Análise detalhada da estrutura de diretórios e diretivas de configuração do Apache.*
+
+---
+
+**Print 6 - Visão Integrada do Ambiente de Trabalho:**
+![Print 6](images/6.jpg)  
+*Ambiente multijanelas validando simultaneamente o código, o navegador e o terminal.*
+
+---
+
+**Print 7 - Repositório Público no GitHub:**
+![Print 7](images/7.jpg)  
+*Exibição do repositório remoto configurado e publicado publicamente.*
+
+---
+
+**Print 8 - Perfil Geral no GitHub:**
+![Print 8](images/8.jpg)  
+*Painel de portfólio no GitHub evidenciando o ecossistema de projetos desenvolvidos.*
 
 4. CONCLUSÃO
 A realização desta atividade prática permitiu vivenciar, de forma direta e aplicada, como a tecnologia de containerização através do Docker transforma e simplifica o ciclo de vida do desenvolvimento e da implantação de infraestrutura de software. A transição de abordagens de implantação tradicionais, que dependem da instalação direta de serviços no sistema operacional hospedeiro ou do uso de máquinas virtuais pesadas, para uma arquitetura baseada em containers traz ganhos expressivos em diversos pilares da Engenharia de Software moderna.
