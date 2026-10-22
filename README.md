@@ -110,7 +110,26 @@ A instrução VOLUME define um diretório de armazenamento persistente ou ponto 
 A instrução EXPOSE documenta e sinaliza qual porta de rede o container utilizará para receber conexões externas.
 
 3. EVIDÊNCIAS (PRINTS)
-(Insira aqui as capturas de tela do seu trabalho)
+## 3. EVIDÊNCIAS (PRINTS)
+
+**Print 1 - Terminal de Comando (Build e Execução):**
+![Terminal Docker](images/nome-do-seu-print-1.png)
+
+*Demonstração da execução dos comandos para construção da imagem e execução do container.*
+
+---
+
+**Print 2 - Navegador Web (Validação HTTP):**
+![Navegador Apache](images/nome-do-seu-print-2.png)
+
+*Acesso ao endereço http://localhost:8080 exibindo a tela padrão de confirmação do Apache.*
+
+---
+
+**Print 3 - Repositório GitHub:**
+![Repositório GitHub](images/nome-do-seu-print-3.png)
+
+*Tela do repositório público contendo o Dockerfile e o README.md publicados.*
 
 Print 1 - Terminal de Comando: Demonstração da execução dos comandos para construção da imagem e execução do container.
 
