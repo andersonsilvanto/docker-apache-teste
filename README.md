@@ -6,9 +6,9 @@ Este projeto contém a configuração de um ficheiro `Dockerfile` para construir
 
 ## 🛠️ Tecnologias Utilizadas
 
-* **Docker**
-* **Debian**
-* **Apache2**
+- **Docker**
+- **Debian**
+- **Apache2**
 
 ---
 
@@ -61,13 +61,14 @@ A instrução VOLUME /var/www/html/ declara um ponto de montagem persistente par
 
 A instrução EXPOSE 80 expõe e documenta a porta de rede padrão HTTP para tráfego web.
 
-Compilação da Imagem: Através do terminal de comando integrado usando o Git Bash ou PowerShell, executou-se a compilação do arquivo Dockerfile utilizando a flag -t para atribuir uma tag de versionamento à imagem resultante nomeada como apache_teste:1.0, executando o comando docker build -t apache_teste:1.0 .
+Compilação da Imagem: Através do terminal de comando integrado usando o Git Bash ou PowerShell, executou-se a compilação do arquivo Dockerfile utilizando a flag -t para atribuir uma tag de versionamento à imagem resultante nomeada como apache_teste:1.0, executando o comando docker build -t apache_teste:1.0 ..
 
 Execução e Mapeamento de Portas: Com a imagem devidamente registrada no repositório local do Docker, o container foi instanciado utilizando a flag -d para rodar em segundo plano no modo desacoplado e a flag -p para mapear a porta 8080 da máquina hospedeira para a porta 80 interna do container, executando o comando docker run -d -p 8080:80 apache_teste:1.0.
 
 Validação do Serviço e Teste de Conectividade: A validação funcional foi realizada ao abrir um navegador web e fazer uma requisição HTTP ao endereço http://localhost:8080. O sucesso do carregamento da página padrão do Apache2 confirmou que o roteamento de rede, a instalação do serviço e a execução do container estavam operando corretamente.
 
 Versionamento Avançado e Integração Contínua (Além do Escopo Básico): Para elevar o nível da entrega técnica e garantir as melhores práticas de Engenharia de Software, todo o projeto foi integrado ao controle de versão Git e publicado publicamente na plataforma GitHub, garantindo rastreabilidade, portabilidade do código de infraestrutura e acesso remoto aos arquivos. O repositório oficial da atividade pode ser acessado em: https://github.com/andersonsilvanto/docker-apache-teste
+
 2. RESULTADOS, VALIDAÇÃO DO CHECKLIST E AVALIAÇÃO
 2.1 Cumprimento Integral do Checklist da Prática
 Para a validação desta atividade, o checklist proposto foi integralmente executado e superado com o seguinte panorama prático:
@@ -86,6 +87,7 @@ Registrar resultados, reflexões e publicação avançada no GitHub: Concluído 
 
 2.2 Respostas às Questões de Avaliação
 Questão 1: Qual o benefício de usar containers nesse tipo de aplicação?
+
 O uso de containers para aplicações web como o Apache oferece diversos benefícios fundamentais:
 
 Portabilidade Absoluta: O container encapsula a aplicação e todas as suas dependências, como bibliotecas, variáveis e arquivos de configuração. Isso garante que o serviço rode com exatidão em qualquer ambiente de desenvolvimento, homologação ou produção na nuvem que possua o Docker Engine instalado, eliminando o problema clássico de que funciona na máquina local mas falha em produção.
@@ -95,6 +97,7 @@ Eficiência e Baixo Consumo de Recursos: Ao contrário de máquinas virtuais tra
 Isolamento de Aplicações: O servidor Apache executa em um ambiente seguro e isolado do sistema operacional principal e de outros containers, prevenindo conflitos de portas, dependências ou privilégios de execução.
 
 Questão 2: Qual o papel das instruções do Dockerfile?
+
 O Dockerfile atua como uma receita declarativa automatizada que orienta o construtor do Docker em como empacotar e preparar a imagem do container camada por camada. Cada instrução desempenha um papel técnico específico:
 
 A instrução FROM define a imagem base a partir da qual o container será construído.
@@ -110,73 +113,40 @@ A instrução VOLUME define um diretório de armazenamento persistente ou ponto 
 A instrução EXPOSE documenta e sinaliza qual porta de rede o container utilizará para receber conexões externas.
 
 3. EVIDÊNCIAS (PRINTS)
-## 3. EVIDÊNCIAS (PRINTS)
+Print 1 - Estrutura do Dockerfile (Visual Studio Code):
 
-**Print 1 - Terminal de Comando (Build e Execução):**
-![Terminal Docker](images/nome-do-seu-print-1.png)
+Configuração inicial e escrita das diretivas do Dockerfile para o servidor web Apache.
 
-*Demonstração da execução dos comandos para construção da imagem e execução do container.*
+Print 2 - Página Inicial do Servidor (Navegador):
 
----
+Visualização da página padrão de boas-vindas do Debian Apache ("It works!").
 
-**Print 2 - Navegador Web (Validação HTTP):**
-![Navegador Apache](images/nome-do-seu-print-2.png)
+Print 3 - Ambiente de Desenvolvimento e Terminal:
 
-*Acesso ao endereço http://localhost:8080 exibindo a tela padrão de confirmação do Apache.*
+Execução integrada dos comandos de construção da imagem e gestão do ambiente.
 
----
+Print 4 - Comandos e Validação no Terminal (PowerShell):
 
-**Print 3 - Repositório GitHub:**
-## 3. EVIDÊNCIAS (PRINTS)
+Verificação do estado dos containers ativos através do comando docker ps.
 
-**Print 1 - Estrutura do Dockerfile (Visual Studio Code):**
-![Print 1](images/1.png)  
-*Configuração inicial e escrita das diretivas do Dockerfile para o servidor web Apache.*
+Print 5 - Documentação e Detalhes da Página Apache:
 
----
+Análise detalhada da estrutura de diretórios e diretivas de configuração do Apache.
 
-**Print 2 - Página Inicial do Servidor (Navegador):**
-![Print 2](images/2.jpg)  
-*Visualização da página padrão de boas-vindas do Debian Apache ("It works!").*
+Print 6 - Visão Integrada do Ambiente de Trabalho:
 
----
+Ambiente multijanelas validando simultaneamente o código, o navegador e o terminal.
 
-**Print 3 - Ambiente de Desenvolvimento e Terminal:**
-![Print 3](images/3.png)  
-*Execução integrada dos comandos de construção da imagem e gestão do ambiente.*
+Print 7 - Repositório Público no GitHub:
 
----
+Exibição do repositório remoto configurado e publicado publicamente.
 
-**Print 4 - Comandos e Validação no Terminal (PowerShell):**
-![Print 4](images/4.png)  
-*Verificação do estado dos containers ativos através do comando `docker ps`.*
+Print 8 - Perfil Geral no GitHub:
 
----
-
-**Print 5 - Documentação e Detalhes da Página Apache:**
-![Print 5](images/5.png)  
-*Análise detalhada da estrutura de diretórios e diretivas de configuração do Apache.*
-
----
-
-**Print 6 - Visão Integrada do Ambiente de Trabalho:**
-![Print 6](images/6.jpg)  
-*Ambiente multijanelas validando simultaneamente o código, o navegador e o terminal.*
-
----
-
-**Print 7 - Repositório Público no GitHub:**
-![Print 7](images/7.jpg)  
-*Exibição do repositório remoto configurado e publicado publicamente.*
-
----
-
-**Print 8 - Perfil Geral no GitHub:**
-![Print 8](images/8.jpg)  
-*Painel de portfólio no GitHub evidenciando o ecossistema de projetos desenvolvidos.*
+Painel de portfólio no GitHub evidenciando o ecossistema de projetos desenvolvidos.
 
 4. CONCLUSÃO
-A realização desta atividade prática permitiu vivenciar, de forma direta e aplicada, como a tecnologia de containerização através do Docker transforma e simplifica o ciclo de vida do desenvolvimento e da implantação de infraestrutura de software. A transição de abordagens de implantação tradicionais, que dependem da instalação direta de serviços no sistema operacional hospedeiro ou do uso de máquinas virtuais pesadas, para uma arquitetura baseada em containers traz ganhos expressivos em diversos pilares da Engenharia de Software moderna.
+A realização desta atividade prática permitiu vivenciar, de forma direta e applied, como a tecnologia de containerização através do Docker transforma e simplifica o ciclo de vida do desenvolvimento e da implantação de infraestrutura de software. A transição de abordagens de implantação tradicionais, que dependem da instalação direta de serviços no sistema operacional hospedeiro ou do uso de máquinas virtuais pesadas, para uma arquitetura baseada em containers traz ganhos expressivos em diversos pilares da Engenharia de Software moderna.
 
 Em primeiro lugar, destaca-se o isolamento e a consistência de ambientes. Ao empacotar o servidor web Apache juntamente com as suas dependências, bibliotecas e variáveis de ambiente dentro de uma imagem criada a partir do Dockerfile, elimina-se de forma definitiva o problema clássico de incompatibilidade de ambientes. A aplicação torna-se um artefato portátil, capaz de ser executado com comportamento idêntico em qualquer plataforma que disponha do Docker Engine, seja um ambiente local de desenvolvimento, um servidor de testes ou uma nuvem produtiva.
 
